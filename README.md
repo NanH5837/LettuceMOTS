@@ -56,3 +56,5 @@ After training, you will get a best segmentation network model, then run the fol
 cd tracking
 Python track.py --weights best.pt --data lettuceMOTS.yaml --source /Path/to/your/souce
 ```
+## Reference
+We borrow some code borrow from [YOLO-V5](https://github.com/ultralytics/yolov5)
