@@ -45,6 +45,7 @@ We provide three pre-trained models trained on the LettuceMOTS dataset, and you 
 After completing the above steps, you can perform the following operations to train the segmentation network:
 
 ```
+cd segment
 Python train.py --data lettuceMOTS.yaml --cfg yolov5m-seg.yaml  --batch-size 16 --weights yolov5m-seg.pt
 ```
 
@@ -52,5 +53,6 @@ Python train.py --data lettuceMOTS.yaml --cfg yolov5m-seg.yaml  --batch-size 16 
 After training, you will get a best segmentation network model, then run the following to track：
 
 ```
+cd tracking
 Python track.py --weights best.pt --data lettuceMOTS.yaml --source /Path/to/your/souce
 ```
