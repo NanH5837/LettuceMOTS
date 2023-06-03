@@ -17,6 +17,9 @@ torch>=1.7.0  # see https://pytorch.org/get-started/locally (recommended)
 torchvision>=0.8.1
 tqdm>=4.64.0
 # protobuf<=3.20.1  # https://github.com/ultralytics/yolov5/issues/8012
+cython>=0.29.34
+lap>=0.4.0
+pycocotools>=2.0.0
 
 # Logging ---------------------------------------------------------------------
 tensorboard>=2.4.1
