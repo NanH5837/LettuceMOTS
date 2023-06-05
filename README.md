@@ -2,7 +2,7 @@
 ## Demo
 
 ## LettuceMOTS Dataset
-The LettuceMOTS dataset is publicly available and can be found (here).(https://drive.google.com/drive/folders/1HIoiyUOu4zYh8jHgqebnbZF_Ewn6Hq62?usp=sharing)
+The LettuceMOTS dataset is publicly available and can be found [here](https://drive.google.com/drive/folders/1HIoiyUOu4zYh8jHgqebnbZF_Ewn6Hq62?usp=sharing).
 ## Getting started
 ### Prerequisites
 Clone repo and create a 
