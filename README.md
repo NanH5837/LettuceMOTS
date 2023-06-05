@@ -1,5 +1,8 @@
 # LettuceMOTS
 ## Demo
+
+## LettuceMOTS Dataset
+The LettuceMOTS dataset is publicly available and can be found (here).(https://drive.google.com/drive/folders/1HIoiyUOu4zYh8jHgqebnbZF_Ewn6Hq62?usp=sharing)
 ## Getting started
 ### Prerequisites
 Clone repo and create a 
@@ -57,4 +60,4 @@ cd tracking
 Python track.py --weights best.pt --data lettuceMOTS.yaml --source /Path/to/your/souce
 ```
 ## Reference
-We borrow some code borrow from [YOLO-V5](https://github.com/ultralytics/yolov5)
+We borrow some code from [YOLO-V5](https://github.com/ultralytics/yolov5)
