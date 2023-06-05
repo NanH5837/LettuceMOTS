@@ -17,7 +17,7 @@ pip install -r requirements.txt  # install
 ```
 
 ### Data
-First, you need to download the L data set from the above URL. 
+First, you need to download the LettuceMOTS dataset. 
 For the convenience of training, we also provide the labels in the format required for YOLO-V5 training. After the download is complete, place it in the following way:
 
 ```
