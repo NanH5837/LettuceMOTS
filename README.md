@@ -60,4 +60,4 @@ cd tracking
 Python track.py --weights best.pt --data lettuceMOTS.yaml --source /Path/to/your/souce
 ```
 ## Reference
-We borrow some code from [YOLO-V5](https://github.com/ultralytics/yolov5)
+We borrow some code from [YOLO-V5](https://github.com/ultralytics/yolov5).
