@@ -6,8 +6,7 @@ The **LettuceMOTS dataset** is publicly available and can be found [here](https:
 ## Getting started
 ### Prerequisites
 Clone repo and create a 
-[**Python>=3.7.0**](https://www.python.org/) environment, including
-[**PyTorch>=1.7**](https://pytorch.org/get-started/locally/).
+**Python>=3.7.0** environment, including **PyTorch>=1.7**.
 We recommend that you install Anaconda, set up a virtual environment and run:
 
 ```bash
