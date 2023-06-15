@@ -42,14 +42,14 @@ def matching(detections, storage):
 
                     iou[ti, di] = GIoU(trk.kfpredict[:4], det[:4])
                     cost[ti, di] = cdist(tf, df, metric='cosine')
-                    cost[ti, di] = cost[ti, di] * (1 - 5 * iou[ti, di])
+                    cost[ti, di] = cost[ti, di] * (1 - iou[ti, di])
 
                 else:
                     iou[ti, di] = GIoU(trk.feature[:4], det[:4])
                     cost[ti, di] = cdist(tf, df, metric='cosine')
-                    cost[ti, di] = cost[ti, di] * (1 - 1 * iou[ti, di])
+                    # cost[ti, di] = cost[ti, di] * (1 - 0 * iou[ti, di])
 
-                cost[ti, di] = cost[ti, di] if (cost[ti, di] < 0.2 and iou[ti, di] > -0.4) else 10000
+                cost[ti, di] = cost[ti, di] if (cost[ti, di] < 0.1 and iou[ti, di] > -0.4) else 10000
 
             else:
                 cost[ti, di] = 10000
@@ -59,7 +59,7 @@ def matching(detections, storage):
     matched_indices1 = []
 
     for m in matched_indices:
-        if cost[m[0], m[1]] < 0.2 and iou[m[0], m[1]] > -0.4:
+        if cost[m[0], m[1]] < 0.1 and iou[m[0], m[1]] > -0.4:
             matched_indices1.append(list(m))
     matched_indices = np.array(matched_indices1)
 

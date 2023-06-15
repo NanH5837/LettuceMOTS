@@ -26,10 +26,10 @@ def FD(contour_points):
     fourier_result = np.fft.fft(r) / len(r)
     fourier_result = np.abs(fourier_result)
 
-    if len(fourier_result) >= 7:
-        fourier_result = fourier_result[0:7]
+    if len(fourier_result) >= 5:
+        fourier_result = fourier_result[0:5]
     else:
-        a = 7 - len(fourier_result)
+        a = 5 - len(fourier_result)
         for _ in range(a):
             fourier_result = np.append(fourier_result, 0)
 
