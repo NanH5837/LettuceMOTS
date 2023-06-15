@@ -47,7 +47,6 @@ def matching(detections, storage):
                 else:
                     iou[ti, di] = GIoU(trk.feature[:4], det[:4])
                     cost[ti, di] = cdist(tf, df, metric='cosine')
-                    # cost[ti, di] = cost[ti, di] * (1 - 0 * iou[ti, di])
 
                 cost[ti, di] = cost[ti, di] if (cost[ti, di] < 0.1 and iou[ti, di] > -0.4) else 10000
 
