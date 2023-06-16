@@ -217,12 +217,12 @@ def run(
                     if save_img or save_crop or view_img:  # Add bbox to image
                         label = f'{idx}'
                         annotator.box_label(xyxy, label, color=colors(idx, True))
-                        # fig = plt.figure()
-                        # fig.set_size_inches(810 / 100, 1080 / 100, forward=True)
-                        # fig.subplots_adjust(left=0, bottom=0, right=1, top=1, wspace=None, hspace=None)
-                        # ax = fig.subplots()
-                        # ax.set_axis_off()
-                        # apply_mask(im0, mask, colors(idx, True))
+                        fig = plt.figure()
+                        fig.set_size_inches(810 / 100, 1080 / 100, forward=True)
+                        fig.subplots_adjust(left=0, bottom=0, right=1, top=1, wspace=None, hspace=None)
+                        ax = fig.subplots()
+                        ax.set_axis_off()
+                        apply_mask(im0, mask, colors(idx, True))
 
                     if save_txt:
                         mask = np.asfortranarray(mm[x.mask].astype(np.uint8))
