@@ -42,7 +42,7 @@ After that, you need to create train.txt and val.txt. The content of the two fil
 ```
 
 ### Pretrained weights
-We provide three pre-trained models trained on the LettuceMOTS dataset, and you can also choose a pre-trained model trained on COCO from [YOLO-V5](https://github.com/ultralytics/yolov5) training. 
+We provide three pre-trained models trained on the LettuceMOTS dataset, and you can also choose a pre-trained model trained on COCO from [YOLOv5](https://github.com/ultralytics/yolov5) training. 
 You can find three trained models [here](https://drive.google.com/drive/folders/1SMZTGZ3_H2yc86TUFeOvKptj_iwBS2Nf?usp=sharing).
 ### Train
 After completing the above steps, you can perform the following operations to train the segmentation network:
@@ -60,4 +60,4 @@ cd tracking
 Python track.py --weights best.pt --data lettuceMOTS.yaml --source /Path/to/your/souce
 ```
 ## Reference
-We borrow some code from [YOLO-V5](https://github.com/ultralytics/yolov5).
+We borrow some code from [YOLOv5](https://github.com/ultralytics/yolov5) and [SORT](https://github.com/abewley/sort).
