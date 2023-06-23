@@ -1,6 +1,6 @@
 # LettuceMOTS
 ## Demo
-https://github.com/NanH5837/LettuceMOTS/assets/82307771/eb127fec-d3d9-4c8a-a81a-a7582a8f33ee
+https://github.com/NanH5837/LettuceMOTS/assets/82307771/5030676a-10a9-4f23-8dbb-cca058c1f785
 ## LettuceMOTS Dataset
 The **LettuceMOTS dataset** is publicly available and can be found [here](https://drive.google.com/drive/folders/1HIoiyUOu4zYh8jHgqebnbZF_Ewn6Hq62?usp=sharing).
 ## Getting started
